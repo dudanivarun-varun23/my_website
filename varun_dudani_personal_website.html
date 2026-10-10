@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f5f5f7">
+<meta name="description" content="Varun Dudani — Business Solutions, Digital Banking, SME Lending and Product Management.">
+<title>Varun Dudani — Product & Digital Transformation</title>
+<style>
+:root{--bg:#f5f5f7;--surface:#fff;--ink:#1d1d1f;--muted:#6e6e73;--blue:#06c;--line:rgba(0,0,0,.09);--max:1120px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:78px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;letter-spacing:-.018em;-webkit-font-smoothing:antialiased}
+a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}
+.nav{height:54px;position:sticky;top:0;z-index:10;background:rgba(245,245,247,.82);backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid rgba(0,0,0,.06)}
+.nav-inner{height:100%;max-width:var(--max);margin:auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{font-size:15px;font-weight:650;color:var(--ink);letter-spacing:-.025em}.navlinks{display:flex;gap:25px;font-size:12px}.navlinks a{color:#424245}
+main{overflow:hidden}.wrap{max-width:var(--max);margin:auto;padding-left:24px;padding-right:24px}
+.hero{min-height:620px;display:flex;align-items:center;text-align:center;padding-top:84px;padding-bottom:88px}
+.hero-inner{max-width:900px;margin:auto}.eyebrow{font-size:14px;font-weight:600;letter-spacing:.02em;color:var(--muted);margin:0 0 18px}
+h1{font-size:clamp(48px,8.2vw,100px);line-height:.98;letter-spacing:-.075em;font-weight:700;margin:0}
+.hero h2{font-size:clamp(23px,3.5vw,38px);font-weight:600;letter-spacing:-.045em;line-height:1.16;margin:22px auto 18px;max-width:800px}
+.lede{font-size:clamp(17px,2.1vw,21px);line-height:1.5;color:var(--muted);max-width:690px;margin:0 auto}
+.links{display:flex;justify-content:center;gap:26px;margin-top:28px;font-size:17px}
+.links a:after{content:" ↗";font-size:.9em}
+.pills{display:flex;justify-content:center;gap:9px;flex-wrap:wrap;margin-top:38px}.pill{background:#e8e8ed;color:#424245;border-radius:999px;padding:9px 14px;font-size:12px;font-weight:550}
+.section{padding:74px 0}.section-head{text-align:center;max-width:750px;margin:0 auto 38px}.section-head h2{font-size:clamp(34px,5vw,54px);letter-spacing:-.06em;line-height:1.04;margin:0 0 14px}.section-head p{color:var(--muted);font-size:18px;line-height:1.5;margin:0}
+.card{background:var(--surface);border-radius:28px;padding:clamp(24px,4vw,42px);box-shadow:0 2px 10px rgba(0,0,0,.025)}
+.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:24px}.metric{background:#fff;border-radius:24px;padding:26px 24px;min-height:145px}.metric strong{display:block;font-size:clamp(34px,4vw,48px);letter-spacing:-.06em;line-height:1.1}.metric span{display:block;color:var(--muted);font-size:14px;margin-top:10px;line-height:1.4}
+.about-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:18px;align-items:stretch}.about-copy h3,.card h3{font-size:25px;letter-spacing:-.04em;margin:0 0 14px}.about-copy p{color:#515154;font-size:17px;line-height:1.7;margin:0 0 14px}.skill-list{display:flex;flex-wrap:wrap;gap:9px;margin-top:20px}.skill{font-size:13px;padding:10px 12px;background:#f5f5f7;border-radius:12px;color:#3a3a3c}
+.timeline{display:grid;gap:14px}.job{background:#fff;border-radius:24px;padding:27px 30px;display:grid;grid-template-columns:210px 1fr;gap:28px}.job-meta{border-right:1px solid var(--line);padding-right:20px}.job-meta h3{font-size:18px;line-height:1.25;margin:0 0 8px;letter-spacing:-.025em}.job-meta p{font-size:13px;line-height:1.5;color:var(--muted);margin:0}.job-body h4{font-size:17px;margin:0 0 10px}.job-body p{font-size:15px;line-height:1.65;color:#515154;margin:0 0 10px}.job-body ul{margin:8px 0 0;padding-left:19px;color:#515154;font-size:14px;line-height:1.7}
+.feature{background:#111113;color:white;border-radius:30px;padding:clamp(28px,5vw,56px);position:relative;overflow:hidden}.feature .eyebrow{color:#a1a1a6}.feature h2{font-size:clamp(36px,5.6vw,64px);line-height:1.02;letter-spacing:-.065em;margin:0 0 18px;max-width:720px}.feature p{color:#c6c6cb;font-size:18px;line-height:1.6;max-width:760px;margin:0}.feature .big{font-size:clamp(76px,13vw,150px);font-weight:700;letter-spacing:-.09em;line-height:1;margin-top:35px;color:#f5f5f7}.feature .big small{font-size:20px;letter-spacing:-.02em;color:#a1a1a6;font-weight:500}
+.edu{display:flex;align-items:flex-start;gap:20px}.edu-icon{width:54px;height:54px;border-radius:16px;background:#f5f5f7;display:grid;place-items:center;font-size:24px;flex-shrink:0}.edu h3{margin:0 0 7px}.edu p{margin:0;color:var(--muted);line-height:1.6}
+.contact{text-align:center;padding:90px 24px 100px}.contact h2{font-size:clamp(42px,7vw,76px);line-height:1;letter-spacing:-.07em;margin:0 0 18px}.contact p{font-size:19px;line-height:1.5;color:var(--muted);margin:0 auto 27px;max-width:600px}.contact-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}.btn{display:inline-block;padding:13px 20px;border-radius:999px;background:var(--blue);color:white;font-size:15px;font-weight:550}.btn.secondary{background:#e8e8ed;color:var(--ink)}.btn:hover{text-decoration:none;filter:brightness(.96)}
+footer{border-top:1px solid var(--line);padding:22px 24px;color:var(--muted);font-size:12px}.footer-inner{max-width:var(--max);margin:auto;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+@media(max-width:720px){.nav-inner{padding:0 18px}.navlinks{gap:14px}.navlinks a:nth-child(2),.navlinks a:nth-child(3){display:none}.wrap{padding-left:16px;padding-right:16px}.hero{min-height:auto;padding-top:95px;padding-bottom:76px}.section{padding:52px 0}.metrics{grid-template-columns:1fr;gap:10px}.metric{min-height:auto}.about-grid{grid-template-columns:1fr}.job{grid-template-columns:1fr;gap:16px;padding:23px}.job-meta{border-right:0;border-bottom:1px solid var(--line);padding:0 0 14px}.feature{border-radius:23px}.edu{gap:14px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<nav class="nav" aria-label="Main navigation"><div class="nav-inner">
+<a class="brand" href="#top">Varun Dudani</a>
+<div class="navlinks"><a href="#about">About</a><a href="#experience">Experience</a><a href="#impact">Impact</a><a href="#contact">Contact</a></div>
+</div></nav>
+<main id="top">
+<section class="hero wrap">
+<div class="hero-inner">
+<p class="eyebrow">BUSINESS SOLUTIONS · DIGITAL TRANSFORMATION</p>
+<h1>Varun Dudani.</h1>
+<h2>Turning complex lending journeys into simpler digital experiences.</h2>
+<p class="lede">Product and business solutions professional with 10+ years of experience building digital lending platforms, connecting business needs with technology, and improving operational outcomes.</p>
+<div class="links"><a href="https://www.linkedin.com/in/varun-dudani-1b7633a1" target="_blank" rel="noopener">LinkedIn</a><a href="mailto:dudanivarun@gmail.com">Get in touch</a></div>
+<div class="pills"><span class="pill">Digital Banking</span><span class="pill">SME Lending</span><span class="pill">Product Management</span><span class="pill">Business Analysis</span></div>
+</div>
+</section>
+<section class="section wrap" id="impact">
+<div class="section-head"><p class="eyebrow">OUTCOMES THAT MATTER</p><h2>Built for real-world impact.</h2><p>Bringing product thinking, process design, and technology together to make lending operations work better.</p></div>
+<div class="metrics">
+<div class="metric"><strong>85%</strong><span>Improvement in operational efficiency through SkaleUp LOS implementation, as described in my profile.</span></div>
+<div class="metric"><strong>$50M+</strong><span>Throughput supported by an SME Loan Origination System at Prolitus Technologies.</span></div>
+<div class="metric"><strong>$27M+</strong><span>Invoice-financing portfolio supported by an automated LOS and LMS at FINAGG.</span></div>
+</div>
+</section>
+<section class="section wrap" id="about">
+<div class="section-head"><p class="eyebrow">A LITTLE ABOUT ME</p><h2>Business context meets product execution.</h2></div>
+<div class="about-grid">
+<div class="card about-copy"><h3>What I do</h3><p>I work at the intersection of business, product, and technology in financial services. My experience spans digital lending platforms, loan origination and management systems, workflow automation, third-party integrations, and cross-functional delivery.</p><p>I enjoy turning complex requirements into practical product capabilities—from discovery and business rules through implementation, launch, and continuous improvement.</p></div>
+<div class="card"><h3>Areas of focus</h3><div class="skill-list"><span class="skill">Product Management</span><span class="skill">Digital Transformation</span><span class="skill">Digital Lending</span><span class="skill">LOS / LMS</span><span class="skill">Business Analysis</span><span class="skill">Stakeholder Management</span><span class="skill">Change Management</span><span class="skill">Workflow Automation</span><span class="skill">Risk & Credit Governance</span><span class="skill">Third-party Integrations</span><span class="skill">Confluence</span><span class="skill">Jira</span><span class="skill">Data-driven Decisions</span></div></div>
+</div>
+</section>
+<section class="section wrap">
+<div class="feature">
+<p class="eyebrow">A SIGNATURE ACHIEVEMENT</p>
+<h2>Building a lending platform from the ground up.</h2>
+<p>At UGRO Capital, I helped build and scale the SkaleUp Loan Origination System across multiple lending products. The work brought together business rules, credit decision frameworks, workflow automation, and third-party integrations—with a focus on processing efficiency, consistency, and customer experience.</p>
+<div class="big">85% <small>operational efficiency improvement</small></div>
+</div>
+</section>
+<section class="section wrap" id="experience">
+<div class="section-head"><p class="eyebrow">CAREER JOURNEY</p><h2>Experience across the lending lifecycle.</h2><p>From business analysis and delivery governance to scaling digital lending products.</p></div>
+<div class="timeline">
+<article class="job"><div class="job-meta"><h3>UGRO Capital</h3><p>June 2023 – Present<br>India</p></div><div class="job-body"><h4>AVP, Business Solutions · April 2026 – Present</h4><p>Lead development and scaling of the SkaleUp LOS across multiple lending products, design business rules and decision frameworks, automate onboarding and underwriting workflows, and coordinate third-party integrations and cross-functional product launches.</p><ul><li>Built and launched SkaleUp LOS from the ground up.</li><li>Improved processing efficiency and credit consistency.</li><li>Maintained near-zero post-release critical defects through delivery governance.</li></ul><h4 style="margin-top:22px">Chief Manager, Business Solutions · June 2023 – April 2026</h4><p>Led business solutions and transformation initiatives for digital lending platforms.</p></div></article>
+<article class="job"><div class="job-meta"><h3>Prolitus Technologies Pvt. Ltd.</h3><p>May 2022 – June 2023<br>Noida, India</p></div><div class="job-body"><h4>Senior Business Analyst</h4><p>Delivered a web-based SME Loan Origination System for working-capital lending, supporting more than $50M in throughput. Used funnel analytics and customer insights to improve application journeys and worked with engineering and QA teams on integrations and quality deployments.</p><ul><li>Delivered the GROX SME LOS.</li><li>Managed full-cycle LOS/LMS delivery for BFSI lenders.</li></ul></div></article>
+<article class="job"><div class="job-meta"><h3>FINAGG Technologies Pvt. Ltd.</h3><p>January 2021 – April 2022<br>India</p></div><div class="job-body"><h4>Senior Business Analyst</h4><p>Conceptualized and launched automated LOS and LMS capabilities for invoice-based financing, supporting a portfolio exceeding $27M. Developed early-warning indicators and portfolio-monitoring frameworks, while aligning platform enhancements with regulatory requirements.</p></div></article>
+<article class="job"><div class="job-meta"><h3>Zuron Fintech</h3><p>November 2019 – January 2021<br>India</p></div><div class="job-body"><h4>Senior Business Analyst</h4><p>Improved platform delivery efficiency by 70% through structured release cycles and project governance. Managed end-to-end client onboarding implementations, contributed $10K in monthly recurring revenue, and integrated Oracle LMS to automate loan servicing.</p></div></article>
+<article class="job"><div class="job-meta"><h3>Priority Vendor Technologies Pvt. Ltd.</h3><p>April 2016 – November 2019<br>India</p></div><div class="job-body"><h4>Business Analyst</h4><p>Translated business requirements into BRDs, functional specifications, and user stories. Established traceability frameworks, participated in Agile ceremonies, and worked with business and technical stakeholders to deliver digital lending solutions.</p></div></article>
+</div>
+</section>
+<section class="section wrap">
+<div class="card edu"><div class="edu-icon" aria-hidden="true">⌘</div><div><p class="eyebrow">EDUCATION</p><h3>Master of Computer Applications (MCA)</h3><p>Guru Gobind Singh Indraprastha University<br>Information Technology · 2013–2016</p></div></div>
+</section>
+<section class="contact" id="contact"><p class="eyebrow">LET’S CONNECT</p><h2>Have a challenge<br>worth solving?</h2><p>I'm always interested in thoughtful conversations about product, digital lending, and transformation.</p><div class="contact-actions"><a class="btn" href="mailto:dudanivarun@gmail.com">Email Varun</a><a class="btn secondary" href="https://www.linkedin.com/in/varun-dudani-1b7633a1" target="_blank" rel="noopener">Connect on LinkedIn</a></div></section>
+</main>
+<footer><div class="footer-inner"><span>© <span id="year">2026</span> Varun Dudani</span><span>Business Solutions · Digital Banking · SME Lending</span><a href="#top">Back to top ↑</a></div></footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
